@@ -67,3 +67,8 @@ let g:tex_flavor = 'latex'
 autocmd FileType tex nnoremap <F5> :VimtexCompile<CR>
 "view the generated pdf
 autocmd FileType tex nnoremap <F4> :VimtexView<CR>
+
+
+" trigger auto completion
+inoremap <silent><expr> <CR> pumvisible() ? coc#_select_confirm()
+      \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
