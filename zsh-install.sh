@@ -22,3 +22,5 @@ else
 	echo "invalid option.exit."
 	exit
 fi
+
+exit # exiting the zsh shell created.

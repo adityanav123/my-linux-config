@@ -28,7 +28,7 @@ fi
 # installing fonts
 current=$(pwd)
 cd /var/tmp
-if [[ -d "~/.fonts" ]]
+if [ -d "~/.fonts" ]
 then
 	unzip ./FiraCode.zip -d ~/.fonts > /dev/null 2&1 &
 else

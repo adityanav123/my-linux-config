@@ -1,41 +1,8 @@
 #!/bin/bash
 
+distro=$1
+
 echo "neo-vim configuration setup."
-
-echo "Pre-requisites : neovim, git, wget, curl, nodejs (>= v16.x), npm"
-echo "if all present, press any key"
-read present
-
-
-
-if [[ $(command -v nvim) ]]; then
-	:
-else
-	echo "Install NeoVim first"
-	exit
-fi
-
-if [[ $(command -v git) ]]; then
-	:
-else
-	echo "Git not installed, Please Install git"
-	exit
-fi
-
-
-if [[ $(command -v wget) ]]; then
-	:
-else
-	echo "wget not installed, install wget"
-	exit
-fi
-
-if [[ $(command -v curl) ]]; then
-	:
-else
-	echo "curl not installed, install curl"
-	exit
-fi
 
 if [ ! -d "~/.config/nvim/" ]
 then
@@ -60,12 +27,12 @@ if [[ $(command -v node) && $(command -v npm) ]]
 then
 	:
 else
-    echo "Install nodejs and npm first. Rest Configurations, will be saved."
+    bash install-nodejs.sh $distro
     exit
 fi
 
     sudo npm i -g yarn
-    curr=$pwd
+    curr=$(pwd)
     cd ~/.config/nvim/plugged/coc.nvim/
     yarn install
     yarn build
@@ -78,6 +45,6 @@ echo "Install language server for python? y/N"
 read lspy
 if [[ "$lspy" == "y" ]]
 then
-	neovim +CocInstall coc-pyright
+	nvim +CocInstall coc-pyright
 	echo "**suggested: install jedi from pip also. "
 fi

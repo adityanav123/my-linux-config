@@ -20,3 +20,9 @@ else
 	echo "invalid option.exit."
 	exit
 fi
+
+
+
+
+# install kitty configutation.
+

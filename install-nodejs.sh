@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "nodejs-LTS(16.x) installation."
+echo "nodejs-LTS(v16.x) installation."
 distro=$1
 
 if [[ $distro -eq 1 ]]

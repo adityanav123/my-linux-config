@@ -1,17 +1,19 @@
 #!/bin/bash
 
+distro=$1
+
 echo "setting up kitty."
 
 ### CREATING KITTY CONFIGURATION FOLDER
-if [ ! -d "~/.config/kitty/" ]
+if [ ! -d "~/.config/kitty" ]
 then
-	mkdir ~/.config/kitty/
+	mkdir ~/.config/kitty
 	cp -r ./kitty-config-files/kitty.conf ~/.config/kitty/
 fi
 
 
 #installing nerd font
-bash nerd-fonts-setup.sh 1
+bash nerd-fonts-setup.sh $distro
 
 echo "installing theme, Earthsong.conf"
 

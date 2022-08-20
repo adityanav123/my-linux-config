@@ -1,13 +1,5 @@
 #!/bin/bash
 
-echo "Setup Configuration(s) for : "
-echo "	1. Kitty"
-echo "	2. Neovim"
-echo "	3. ZSH(omz)"
-echo "	4. Nerd Fonts"
-echo "	   4.1 Fira Code Nerd Font"
-echo "	   4.2 Monofur NF"
-
 
 echo "enter distro code."
 
@@ -96,7 +88,7 @@ else
 	read zsh_choice
 	if [[ "$zsh_choice" == "y" || "$zsh_choice" == "Y" ]]
 	then
-		bash install-zsh.sh $distro
+		bash zsh-install.sh $distro
 	else
 		:
 	fi
@@ -111,26 +103,35 @@ echo "done.."
 
 while [[ "$choice" != "q" ]]
 do
-	echo "---------------------------------------------"
+	echo "++++++++++++++++++++++++++++++++"
+	echo "Setup Configuration(s) for : "
+	echo "	1. Kitty"
+	echo "	2. Neovim"
+	echo "	3. ZSH(omz)"
+	echo "	4. Nerd Fonts"
+	echo "	   4.1 Fira Code Nerd Font"
+	echo "	   4.2 Monofur NF"
+	echo "++++++++++++++++++++++++++++++++"
+
 	echo "enter choice (enter q/Q to exit)"
 	read choice
 
 	if [[ "$choice" == "1" ]]
 	then
 		echo "Installing Kitty Configuration"
-		bash ./kitty-conf.sh
+		bash ./kitty-conf.sh $distro
 	elif [[ "$choice" == "2" ]]
 	then
 		echo "Installing neovim configuration"
-		bash ./neovim-config.sh
+		bash ./neovim-config.sh $distro
 	elif [[ "$choice" == "3" ]]
 	then
 		echo "Install OhMyZSH configuration"
-		bash ./zsh-setup.sh
+		bash ./zsh-setup.sh $distro
 	elif [[ "$choice" == "4" ]]
 	then
 		echo "Installing Nerd Fonts"
-		bash ./nerd-fonts-setup.sh
+		bash ./nerd-fonts-setup.sh $distro
 	elif [[ "$choice" == "q" || "$choice" == "Q" ]]
 	then
 		exit
