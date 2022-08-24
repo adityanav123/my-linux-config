@@ -69,6 +69,17 @@ autocmd FileType tex nnoremap <F5> :VimtexCompile<CR>
 autocmd FileType tex nnoremap <F4> :VimtexView<CR>
 
 
+" CoC Configuration
 " trigger auto completion
-inoremap <silent><expr> <CR> pumvisible() ? coc#_select_confirm()
-      \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+inoremap <silent><expr> <TAB> coc#pum#visible() ? coc#pum#confirm() : "\<C-y>"
+
+" show documentation
+nnoremap <silent> K :call ShowDocumentation() <CR>
+
+function! ShowDocumentation()
+  if CocAction('hasProvider', 'hover')
+    call CocActionAsync('doHover')
+  else
+    call feedkeys('K', 'in')
+  endif
+endfunction
