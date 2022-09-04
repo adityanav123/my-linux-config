@@ -22,15 +22,24 @@ foo:~$ bash ./linux-setup.sh
 | F8 in code         | Show fun, var names in code |
 
 
--- Further vim bits and pieces
+> Further vim bits and pieces
+
     - Mouse Mode is ON
+    
     - System Clipboard is ON
+    
     - No Swap file generated
 
--- Vim Plugins used.
+> Vim Plugins used.
+    
     - NerdTree ( File Explorer )
+    
     - FloatTerm ( Floating Terminal )
+    
     - LightLine ( Information Bar below )
+    
     - tagbar ( Show Code information )
+    
     - vim-devicons ( Better Icons, used for NerdTree )
+    
     - coc.nvim ( Autocomplete, Auto-Syntax Checking in programming ) 
