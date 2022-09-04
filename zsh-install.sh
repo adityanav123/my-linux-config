@@ -1,4 +1,6 @@
 #!/bin/bash
+echo 
+echo
 echo "| -----------------------------------------------  |"
 echo "| Installing ZSH & exa (alternative to ls command) |"
 echo "| -----------------------------------------------  |"

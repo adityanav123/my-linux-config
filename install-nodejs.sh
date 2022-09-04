@@ -1,5 +1,6 @@
 #!/bin/bash
-
+echo 
+echo
 
 echo "|------------------------------|"
 echo "|nodejs-LTS(v16.x) installation|"

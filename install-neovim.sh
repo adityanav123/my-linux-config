@@ -1,7 +1,8 @@
 #!/bin/bash
 
 distro=$1
-
+echo 
+echo
 echo "|-----------------|"
 echo "|Installing neovim|"
 echo "|-----------------|"

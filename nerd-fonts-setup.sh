@@ -1,6 +1,7 @@
 #!/bin/bash
 
-
+echo 
+echo
 echo "|--------------------------------------------|"
 echo "|currently this scripts installs 2 fonts only|"
 echo "|	1. Fira Code NF						   	   |"

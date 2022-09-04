@@ -1,5 +1,6 @@
 #!/bin/bash
-
+echo 
+echo
 distro=$1
 echo "|---------------------------|"
 echo "|neo-vim configuration setup|"

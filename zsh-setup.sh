@@ -1,6 +1,8 @@
 #!/bin/bash
 
 distro=$1
+echo 
+echo
 
 echo "| ----------------- |"
 echo "| ZSH Configuration |"

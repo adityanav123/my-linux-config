@@ -2,6 +2,9 @@
 
 distro=$1
 
+echo 
+echo
+
 echo "|----------------|"
 echo "|setting up kitty|"
 echo "|----------------|"
@@ -10,7 +13,7 @@ if [ $(command -v kitty) ]
 then
 	:
 else
-	bash ./install-kitty.sh
+	bash ./install-kitty.sh $distro
 fi
 
 

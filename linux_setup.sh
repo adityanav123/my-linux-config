@@ -1,5 +1,6 @@
 #!/bin/bash
-
+echo 
+echo
 
 echo "enter distro code."
 
