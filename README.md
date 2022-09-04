@@ -24,22 +24,22 @@ foo:~$ bash ./linux-setup.sh
 
 > Further vim bits and pieces
 
-    - Mouse Mode is ON
+    * *Mouse Mode* is ON
     
-    - System Clipboard is ON
+    * *System Clipboard* is ON
     
-    - No Swap file generated
+    * No *Swap file* generated
 
 > Vim Plugins used.
     
-    - NerdTree ( File Explorer )
+    - **NerdTree** ( File Explorer )
     
-    - FloatTerm ( Floating Terminal )
+    - **FloatTerm** ( Floating Terminal )
     
-    - LightLine ( Information Bar below )
+    - **LightLine** ( Information Bar below )
     
-    - tagbar ( Show Code information )
+    - **tagbar** ( Show Code information )
     
-    - vim-devicons ( Better Icons, used for NerdTree )
+    - **vim-devicons** ( Better Icons, used for NerdTree )
     
-    - coc.nvim ( Autocomplete, Auto-Syntax Checking in programming ) 
+    - **coc.nvim** ( Autocomplete, Auto-Syntax Checking in programming ) 
