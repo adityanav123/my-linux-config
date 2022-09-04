@@ -1,5 +1,10 @@
-setup configuration for linux system.
-- run bash ./linux_setup.sh
+# setup configuration for linux system.
+
+
+## How to run.
+```console
+user_of@ARCHLINUX:~$ bash ./linux-setup.sh
+```
 
 
 - Vim Configuration
