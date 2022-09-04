@@ -3,9 +3,9 @@
 
 echo "|--------------------------------------------|"
 echo "|currently this scripts installs 2 fonts only|"
-echo "|		1. Fira Code NF						   |"
-echo "|		2. Monofur NF						   |"
-echo "|		q. Quit								   |"
+echo "|	1. Fira Code NF						   	   |"
+echo "|	2. Monofur NF						       |"
+echo "|	q. Quit								       |"
 echo "|--------------------------------------------|"
 
 
