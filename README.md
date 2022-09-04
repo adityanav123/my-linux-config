@@ -1,4 +1,4 @@
-# setup configuration for linux system.
+# my setup configuration for linux system.
 
 
 ## How to run.
