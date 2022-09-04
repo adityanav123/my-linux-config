@@ -6,6 +6,13 @@ echo "|----------------|"
 echo "|setting up kitty|"
 echo "|----------------|"
 
+if [ $(command -v kitty) ]
+then
+	:
+else
+	bash ./install-kitty.sh
+fi
+
 
 ### CREATING KITTY CONFIGURATION FOLDER
 if [ ! -d "~/.config/kitty" ]
