@@ -2,6 +2,7 @@
 
 
 ## How to run.
+
 ```console
 foo:~$ bash ./linux-setup.sh
 ```
@@ -22,24 +23,28 @@ foo:~$ bash ./linux-setup.sh
 | F8 in code         | Show fun, var names in code |
 
 
-> Further vim bits and pieces
 
-    * *Mouse Mode* is ON
+> Further vim bits and pieces
+<Details>
+
+* _Mouse_ is ON
     
-    * *System Clipboard* is ON
+* _System Clipboard_ is ON
     
-    * No *Swap file* generated
+* No _Swap file_ generated
+</Details>
 
 > Vim Plugins used.
+<Details>
+- **NerdTree** ( File Explorer )
     
-    - **NerdTree** ( File Explorer )
+- **FloatTerm** ( Floating Terminal )
     
-    - **FloatTerm** ( Floating Terminal )
+- **LightLine** ( Information Bar below )
     
-    - **LightLine** ( Information Bar below )
+- **tagbar** ( Show Code information )
     
-    - **tagbar** ( Show Code information )
+- **vim-devicons** ( Better Icons, used for NerdTree )
     
-    - **vim-devicons** ( Better Icons, used for NerdTree )
-    
-    - **coc.nvim** ( Autocomplete, Auto-Syntax Checking in programming ) 
+- **coc.nvim** ( Autocomplete, Auto-Syntax Checking in programming ) 
+</Details>
