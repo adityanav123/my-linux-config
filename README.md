@@ -36,6 +36,7 @@ foo:~$ bash ./linux-setup.sh
 
 > Vim Plugins used.
 <Details>
+
 - **NerdTree** ( File Explorer )
     
 - **FloatTerm** ( Floating Terminal )
