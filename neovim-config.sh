@@ -1,8 +1,9 @@
 #!/bin/bash
 
 distro=$1
-
-echo "neo-vim configuration setup."
+echo "|---------------------------|"
+echo "|neo-vim configuration setup|"
+echo "|---------------------------|"
 
 if [ ! -d "~/.config/nvim/" ]
 then
@@ -22,7 +23,10 @@ then
 fi
 
 # CoC config
-echo "Installing. CoC for NeoVim?. autocomplete, autocorrect in programs Y/N"
+echo "|-----------------------------------------------------------------|"
+echo "|Installing. CoC for NeoVim. autocomplete, autocorrect in programs|"
+echo "|-----------------------------------------------------------------|"
+
 if [[ $(command -v node) && $(command -v npm) ]]
 then
 	:
@@ -36,15 +40,7 @@ fi
     cd ~/.config/nvim/plugged/coc.nvim/
     yarn install
     yarn build
-    echo "coc set up ; can install language servers now."
+    # echo "coc set up ; can install language servers now."
     cd $curr
 
-echo "neovim config file : @ : ~/.config/nvim/init.vim"
-
-echo "Install language server for python? y/N"
-read lspy
-if [[ "$lspy" == "y" ]]
-then
-	nvim +CocInstall coc-pyright
-	echo "**suggested: install jedi from pip also. "
-fi
+echo "neovim config file : @ : [ ~/.config/nvim/init.vim ]"

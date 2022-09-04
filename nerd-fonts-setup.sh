@@ -1,13 +1,17 @@
 #!/bin/bash
 
-echo "currently this scripts installs 2 fonts only"
-echo "1. Fira Code NF"
-echo "2. Monofur NF"
+
+echo "|--------------------------------------------|"
+echo "|currently this scripts installs 2 fonts only|"
+echo "|		1. Fira Code NF						   |"
+echo "|		2. Monofur NF						   |"
+echo "|		q. Quit								   |"
+echo "|--------------------------------------------|"
 
 
 if [ $? -eq 0 ]
 then
-	echo "enter choice (1 / 2) -"
+	echo "enter choice (1 / 2 / q) -"
 	read choice
 	echo ""
 else
@@ -17,12 +21,15 @@ fi
 
 if [[ "$choice" == "1" ]]
 then
-	echo "Fira Code NF"
+	# echo "Fira Code NF"
 	wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip -P /var/tmp
 elif [[ "$choice" == "2" ]]
 then
-	echo "Monofur NF"
+	# echo "Monofur NF"
 	wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Monofur.zip -P /var/tmp
+elif [[ "$choice" == 'q' ]]
+then
+	exit
 fi
 
 # installing fonts

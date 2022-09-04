@@ -49,3 +49,4 @@ foo:~$ bash ./linux-setup.sh
     
 - **coc.nvim** ( Autocomplete, Auto-Syntax Checking in programming ) 
 </Details>
+

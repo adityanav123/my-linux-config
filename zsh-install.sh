@@ -1,23 +1,22 @@
 #!/bin/bash
+echo "| -----------------------------------------------  |"
+echo "| Installing ZSH & exa (alternative to ls command) |"
+echo "| -----------------------------------------------  |"
 
-echo "Installing ZSH & exa (alternative to ls command)"
 distro=$1
 
 if [[ $distro -eq 1 ]]
 then
-	echo "arch"
-	sudo pacman -Syu && sudo pacman -Sy zsh
-	sudo pacman -Syu exa
+	# echo "arch"
+	sudo pacman -Sy zsh exa
 elif [[ $distro -eq 2 ]]
 then	
-	echo "debian"
-	sudo apt update && sudo apt install zsh
-	sudo apt install exa
+	# echo "debian"
+	sudo apt install zsh exa
 elif [[ $distro -eq 3 ]]
 then
-	echo "fedora"
-	sudo dnf update && sudo dnf install zsh
-	sudo dnf install exa
+	# echo "fedora"
+	sudo dnf install zsh exa
 else
 	echo "invalid option.exit."
 	exit

@@ -2,7 +2,10 @@
 
 distro=$1
 
-echo "setting up kitty."
+echo "|----------------|"
+echo "|setting up kitty|"
+echo "|----------------|"
+
 
 ### CREATING KITTY CONFIGURATION FOLDER
 if [ ! -d "~/.config/kitty" ]

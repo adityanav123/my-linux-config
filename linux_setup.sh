@@ -118,19 +118,19 @@ do
 
 	if [[ "$choice" == "1" ]]
 	then
-		echo "Installing Kitty Configuration"
+		# echo "Installing Kitty Configuration"
 		bash ./kitty-conf.sh $distro
 	elif [[ "$choice" == "2" ]]
 	then
-		echo "Installing neovim configuration"
+		# echo "Installing neovim configuration"
 		bash ./neovim-config.sh $distro
 	elif [[ "$choice" == "3" ]]
 	then
-		echo "Install OhMyZSH configuration"
+		# echo "Install OhMyZSH configuration"
 		bash ./zsh-setup.sh $distro
 	elif [[ "$choice" == "4" ]]
 	then
-		echo "Installing Nerd Fonts"
+		# echo "Installing Nerd Fonts"
 		bash ./nerd-fonts-setup.sh $distro
 	elif [[ "$choice" == "q" || "$choice" == "Q" ]]
 	then
