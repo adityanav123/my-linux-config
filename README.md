@@ -3,7 +3,7 @@
 
 ## How to run.
 ```console
-user_of@ARCHLINUX:~$ bash ./linux-setup.sh
+foo:~$ bash ./linux-setup.sh
 ```
 
 
